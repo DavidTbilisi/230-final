@@ -10,6 +10,8 @@
     /* font usage: font-family */
 }
 
+
+
 body {
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
@@ -17,7 +19,20 @@ body {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-  }
+
+    min-height: 400vh;
+}
+
+img {
+    max-width: 100%;
+    position: relative;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+}
 
 .container {
     max-width: 1200px;
@@ -49,6 +64,19 @@ a:hover, .link:hover {
     text-decoration: line-through;
 }
 
+#main {
+    margin-top: 50px;
+}
+
+#main .flex {
+    justify-content: space-between;
+}
+
+.article {
+    display: flex;
+    gap: 10px;
+}
+
 .t-b-borders {
     padding: var(--padding);
     border-top: 1px solid black; 
@@ -66,6 +94,16 @@ nav .flex {
     display: flex;
     justify-content: center;
 }
+
+.img-container {
+    background-image: url('../imgs/bg_image.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 400px;
+}
+
 
 /* UTILITY */
 
