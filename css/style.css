@@ -96,13 +96,34 @@ nav .flex {
 }
 
 .img-container {
+    margin-top: 40px;
     background-image: url('../imgs/bg_image.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     min-width: 100%;
-    min-height: 400px;
+    min-height: 550px;
+    position: relative;
 }
+
+.live{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.live span{
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--red);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
 
 
 /* UTILITY */
