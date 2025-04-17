@@ -1,0 +1,63 @@
+:root{
+    --red: #E63946;
+    --black: #202124;
+    --white: #F4F4F9;
+    --text-color: #2c3e50;
+
+    --margin: 16px;
+    --padding: 16px;
+    --border-radius: 8px;
+    /* font usage: font-family */
+}
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tag {
+    color: var(--black);
+    border-radius: var(--border-radius);
+    display: inline-block;
+    padding: var(--padding);
+    border:1px solid black;
+    cursor: pointer;
+}
+
+.top-bar {
+    margin-top: 15px;
+    padding: var(--padding);
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+}
+
+
+.logo {
+    text-align: center;
+    line-height: 200px;
+}
+
+/* UTILITY */
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-h {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
