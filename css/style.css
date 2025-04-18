@@ -86,7 +86,7 @@ a:hover, .link:hover {
 
 .logo {
     text-align: center;
-    line-height: 200px;
+    padding: 30px 0;
 }
 
 
@@ -127,6 +127,11 @@ nav .flex {
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
     animation: livepulse 1s infinite;
+}
+.live span:hover {
+    animation: none;
+    transform: scale(1.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes livepulse {
