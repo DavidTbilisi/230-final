@@ -1,4 +1,4 @@
-:root{
+:root {
     --red: #E63946;
     --black: #202124;
     --white: #F4F4F9;
@@ -7,19 +7,15 @@
     --margin: 16px;
     --padding: 16px;
     --border-radius: 8px;
-    /* font usage: font-family */
 }
 
-
-
+/* Base Styles */
 body {
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-
+    font-variation-settings: "wdth" 100;
     min-height: 400vh;
 }
 
@@ -34,9 +30,31 @@ h2 {
     color: var(--black);
 }
 
+/* Layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#main {
+    margin-top: 50px;
+}
+
+#main .flex {
+    justify-content: space-between;
+}
+
+.article {
+    display: flex;
+    gap: 10px;
+}
+
+/* Components */
+.under-image {
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--white);
 }
 
 .tag {
@@ -44,8 +62,14 @@ h2 {
     border-radius: var(--border-radius);
     display: inline-block;
     padding: var(--padding);
-    border:1px solid black;
+    border: 1px solid black;
     cursor: pointer;
+    text-transform: uppercase;
+}
+
+.tag:hover {
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .top-bar {
@@ -64,31 +88,16 @@ a:hover, .link:hover {
     text-decoration: line-through;
 }
 
-#main {
-    margin-top: 50px;
-}
-
-#main .flex {
-    justify-content: space-between;
-}
-
-.article {
-    display: flex;
-    gap: 10px;
-}
-
 .t-b-borders {
     padding: var(--padding);
-    border-top: 1px solid black; 
-    border-bottom: 1px solid black; 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
-
 
 .logo {
     text-align: center;
     padding: 30px 0;
 }
-
 
 nav .flex {
     display: flex;
@@ -106,7 +115,7 @@ nav .flex {
     position: relative;
 }
 
-.live{
+.live {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -116,7 +125,7 @@ nav .flex {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.live span{
+.live span {
     display: inline-block;
     padding: 5px;
     background-color: var(--red);
@@ -128,6 +137,7 @@ nav .flex {
     transition: transform 0.3s ease-in-out;
     animation: livepulse 1s infinite;
 }
+
 .live span:hover {
     animation: none;
     transform: scale(1.5);
@@ -144,18 +154,13 @@ nav .flex {
     100% {
         transform: scale(1);
     }
-    
 }
 
-
-
-/* UTILITY */
-
+/* Utility Classes */
 .flex {
     display: flex;
     gap: 10px;
 }
-
 
 .flex-v {
     display: flex;
